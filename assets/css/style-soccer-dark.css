@@ -30,7 +30,7 @@ body {
 }
 
 #jprePercentage:before {
-    content: "Loading...";
+    content: "Chargement...";
     color: #fff
 }
 

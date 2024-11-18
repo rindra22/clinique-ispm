@@ -1,408 +1,276 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <!-- Basic Page Needs
-	================================================== -->
-    <title>Match Prédiction</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Sports Club, League and News HTML Template"
-    />
-    <meta name="author" content="Dan Fisher" />
-    <meta name="keywords" content="sports club news HTML template" />
-    <!-- Favicons
-	================================================== -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/soccer/favicons/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/images/soccer/favicons/favicon-120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/images/soccer/favicons/favicon-152.png"
-    />
-    <!-- Mobile Specific Metas
-	================================================== -->
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
-    />
-    <!-- Google Web Fonts
-	================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap"
-      rel="stylesheet"
-    />
-    <!-- CSS
-	================================================== -->
-    <!-- Vendor CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" />
-    <link
-      href="assets/fonts/simple-line-icons/css/simple-line-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/magnific-popup/dist/magnific-popup.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/slick/slick.css" rel="stylesheet" />
-    <!-- Template CSS-->
-    <link href="assets/css/style-soccer-dark.css" rel="stylesheet" />
-    <!-- Custom CSS-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-  </head>
 
-  <body data-template="template-soccer">
-    <div class="site-wrapper clearfix">
-      <div class="site-overlay"></div>
-      <!-- Header
-		================================================== -->
-      <!-- Header Mobile -->
-      <div class="header-mobile clearfix" id="header-mobile">
-        <div class="header-mobile__logo">
-          <a href="_soccer_index.html"
-            ><img
-              src="assets/images/soccer/logo.png"
-              srcset="assets/images/soccer/logo@2x.png 2x"
-              alt="Alchemists"
-              class="header-mobile__logo-img"
-          /></a>
-        </div>
-        <div class="header-mobile__inner">
-          <a id="header-mobile__toggle" class="burger-menu-icon"
-            ><span class="burger-menu-icon__line"></span
-          ></a>
-          <span
-            class="header-mobile__search-icon"
-            id="header-mobile__search-icon"
-          ></span>
-        </div>
+<head>
+  <title>Match Prédiction</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Sports Club, League and News HTML Template" />
+  <meta name="author" content="Dan Fisher" />
+  <meta name="keywords" content="sports club news HTML template" />
+  <link rel="shortcut icon" href="assets/images/soccer/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/soccer/favicons/favicon-120.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/soccer/favicons/favicon-152.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family&#x3D;Source+Sans+Pro:wght@400;700&amp;display&#x3D;swap"
+    rel="stylesheet" />
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/fonts/font-awesome/css/all.min.css" rel="stylesheet" />
+  <link href="assets/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+  <link href="assets/vendor/slick/slick.css" rel="stylesheet" />
+
+  <link href="assets/css/style-soccer-dark.css" rel="stylesheet" />
+
+  <link href="assets/css/custom.css" rel="stylesheet" />
+</head>
+
+<body data-template="template-soccer">
+  <div class="site-wrapper clearfix">
+    <div class="site-overlay"></div>
+
+    <div class="header-mobile clearfix" id="header-mobile">
+      <div class="header-mobile__logo">
+        <a href="_soccer_index.html"><img src="assets/images/soccer/logo.png"
+            srcset="assets/images/soccer/logo@2x.png 2x" alt="Alchemists" class="header-mobile__logo-img" /></a>
       </div>
-      <!-- Event Pages Nav -->
-      <nav class="content-filter">
-        <div class="container">
-          <a href="#" class="content-filter__toggle"></a>
-          <ul class="content-filter__list">
-            <li class="content-filter__item active">
-              <a href="#" class="content-filter__link"
-                ><small>Match</small>Prédiction</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Event Pages Nav / End -->
-      <!-- Content
-		================================================== -->
-      <div class="site-content">
-        <div class="container">
-          <div class="row">
-            <div class="sidebar col-lg-12">
-              <!-- Widget: Latest Results - Team #2 -->
-              <div
-                class="widget card card--alt-color widget--sidebar widget-results"
-              >
-                <div class="widget__title card__header">
-                  <h4>Les prédications des matchs.</h4>
-                </div>
-                <div class="widget__content card__content">
-                  <ul class="widget-results__list">
-                    <!-- Game #0 -->
-                    <li class="widget-results__item">
-                      <div
-                        class="widget-results__header justify-content-center"
-                      >
-                        <div class="widget-results__title">
-                          Friday, March 16
-                        </div>
-                      </div>
-                      <div class="widget-results__content">
-                        <div
-                          class="widget-results__team widget-results__team--first"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/lucky_clovers_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Clovers</h5>
-                            <span class="widget-results__team-info"
-                              >St. Patrick’s Inst</span
-                            >
-                          </div>
-                        </div>
-                        <div class="widget-results__result">
-                          <div class="widget-results__score">
-                            <span class="widget-results__score-winner">2</span>
-                            - <span class="widget-results__score-loser">0</span>
-                            <div class="widget-results__status">Home</div>
-                          </div>
-                        </div>
-                        <div
-                          class="widget-results__team widget-results__team--second"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/red_wings_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Red Wings</h5>
-                            <span class="widget-results__team-info"
-                              >Eric Bros School</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- Game #0 / End -->
-                    <!-- Game #1 -->
-                    <li class="widget-results__item">
-                      <div
-                        class="widget-results__header justify-content-center"
-                      >
-                        <div class="widget-results__title">
-                          Saturday, March 10
-                        </div>
-                      </div>
-                      <div class="widget-results__content">
-                        <div
-                          class="widget-results__team widget-results__team--first"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/ocean_kings_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">
-                              Ocean Kings
-                            </h5>
-                            <span class="widget-results__team-info"
-                              >Bay College</span
-                            >
-                          </div>
-                        </div>
-                        <div class="widget-results__result">
-                          <div class="widget-results__score">
-                            <span class="widget-results__score-loser">2</span> -
-                            <span class="widget-results__score-loser">2</span>
-                            <div class="widget-results__status">Away</div>
-                          </div>
-                        </div>
-                        <div
-                          class="widget-results__team widget-results__team--second"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/lucky_clovers_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Clovers</h5>
-                            <span class="widget-results__team-info"
-                              >St. Patrick’s Inst</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- Game #1 / End -->
-                    <!-- Game #2 -->
-                    <li class="widget-results__item">
-                      <div
-                        class="widget-results__header justify-content-center"
-                      >
-                        <div class="widget-results__title">Friday, March 4</div>
-                      </div>
-                      <div class="widget-results__content">
-                        <div
-                          class="widget-results__team widget-results__team--first"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/lucky_clovers_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Clovers</h5>
-                            <span class="widget-results__team-info"
-                              >St. Patrick’s Inst</span
-                            >
-                          </div>
-                        </div>
-                        <div class="widget-results__result">
-                          <div class="widget-results__score">
-                            <span class="widget-results__score-loser">2</span> -
-                            <span class="widget-results__score-winner">5</span>
-                            <div class="widget-results__status">Home</div>
-                          </div>
-                        </div>
-                        <div
-                          class="widget-results__team widget-results__team--second"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/sharks_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Sharks</h5>
-                            <span class="widget-results__team-info"
-                              >Marine College</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- Game #2 / End -->
-                    <!-- Game #3 -->
-                    <li class="widget-results__item">
-                      <div
-                        class="widget-results__header justify-content-center"
-                      >
-                        <div class="widget-results__title">
-                          Saturday, February 27
-                        </div>
-                      </div>
-                      <div class="widget-results__content">
-                        <div
-                          class="widget-results__team widget-results__team--first"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/draconians_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">
-                              Draconians
-                            </h5>
-                            <span class="widget-results__team-info"
-                              >Wyvern College</span
-                            >
-                          </div>
-                        </div>
-                        <div class="widget-results__result">
-                          <div class="widget-results__score">
-                            <span class="widget-results__score-loser">0</span> -
-                            <span class="widget-results__score-loser">0</span>
-                            <div class="widget-results__status">Away</div>
-                          </div>
-                        </div>
-                        <div
-                          class="widget-results__team widget-results__team--second"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/lucky_clovers_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Clovers</h5>
-                            <span class="widget-results__team-info"
-                              >St. Patrick’s Inst</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- Game #3 / End -->
-                    <!-- Game #4 -->
-                    <li class="widget-results__item">
-                      <div
-                        class="widget-results__header justify-content-center"
-                      >
-                        <div class="widget-results__title">
-                          Friday, February 26
-                        </div>
-                      </div>
-                      <div class="widget-results__content">
-                        <div
-                          class="widget-results__team widget-results__team--first"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/lucky_clovers_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">Clovers</h5>
-                            <span class="widget-results__team-info"
-                              >St. Patrick’s Inst</span
-                            >
-                          </div>
-                        </div>
-                        <div class="widget-results__result">
-                          <div class="widget-results__score">
-                            <span class="widget-results__score-winner">3</span>
-                            - <span class="widget-results__score-loser">1</span>
-                            <div class="widget-results__status">Home</div>
-                          </div>
-                        </div>
-                        <div
-                          class="widget-results__team widget-results__team--second"
-                        >
-                          <figure class="widget-results__team-logo">
-                            <img
-                              src="assets/images/samples/logos/pirates_shield.png"
-                              alt=""
-                            />
-                          </figure>
-                          <div class="widget-results__team-details">
-                            <h5 class="widget-results__team-name">
-                              L.A. Pirates
-                            </h5>
-                            <span class="widget-results__team-info"
-                              >Bebop Institute</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <!-- Game #4 / End -->
-                  </ul>
-                </div>
+      <div class="header-mobile__inner">
+        <a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a>
+        <span class="header-mobile__search-icon" id="header-mobile__search-icon"></span>
+      </div>
+    </div>
+
+    <nav class="content-filter">
+      <div class="container">
+        <a href="#" class="content-filter__toggle"></a>
+        <ul class="content-filter__list">
+          <li class="content-filter__item active">
+            <a href="#" class="content-filter__link"><small>Match</small>Prédiction</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="site-content">
+      <div class="container">
+        <div class="row">
+          <div class="sidebar col-lg-12">
+
+            <div class="widget card card--alt-color widget--sidebar widget-results">
+              <div class="widget__title card__header">
+                <h4>Les prédications des matchs.</h4>
               </div>
-              <!-- Widget: Latest Results - Team #2 / End -->
+              <div class="widget__content card__content">
+                <ul class="widget-results__list">
+
+                  <li class="widget-results__item">
+                    <div class="widget-results__header justify-content-center">
+                      <div class="widget-results__title">
+                        Friday, March 16
+                      </div>
+                    </div>
+                    <div class="widget-results__content">
+                      <div class="widget-results__team widget-results__team--first">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Clovers</h5>
+                          <span class="widget-results__team-info">St. Patrick’s Inst</span>
+                        </div>
+                      </div>
+                      <div class="widget-results__result">
+                        <div class="widget-results__score">
+                          <span class="widget-results__score-winner">2</span>
+                          - <span class="widget-results__score-loser">0</span>
+                          <div class="widget-results__status">Home</div>
+                        </div>
+                      </div>
+                      <div class="widget-results__team widget-results__team--second">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/red_wings_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Red Wings</h5>
+                          <span class="widget-results__team-info">Eric Bros School</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+                  <li class="widget-results__item">
+                    <div class="widget-results__header justify-content-center">
+                      <div class="widget-results__title">
+                        Saturday, March 10
+                      </div>
+                    </div>
+                    <div class="widget-results__content">
+                      <div class="widget-results__team widget-results__team--first">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/ocean_kings_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">
+                            Ocean Kings
+                          </h5>
+                          <span class="widget-results__team-info">Bay College</span>
+                        </div>
+                      </div>
+                      <div class="widget-results__result">
+                        <div class="widget-results__score">
+                          <span class="widget-results__score-loser">2</span> -
+                          <span class="widget-results__score-loser">2</span>
+                          <div class="widget-results__status">Away</div>
+                        </div>
+                      </div>
+                      <div class="widget-results__team widget-results__team--second">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Clovers</h5>
+                          <span class="widget-results__team-info">St. Patrick’s Inst</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+                  <li class="widget-results__item">
+                    <div class="widget-results__header justify-content-center">
+                      <div class="widget-results__title">Friday, March 4</div>
+                    </div>
+                    <div class="widget-results__content">
+                      <div class="widget-results__team widget-results__team--first">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Clovers</h5>
+                          <span class="widget-results__team-info">St. Patrick’s Inst</span>
+                        </div>
+                      </div>
+                      <div class="widget-results__result">
+                        <div class="widget-results__score">
+                          <span class="widget-results__score-loser">2</span> -
+                          <span class="widget-results__score-winner">5</span>
+                          <div class="widget-results__status">Home</div>
+                        </div>
+                      </div>
+                      <div class="widget-results__team widget-results__team--second">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/sharks_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Sharks</h5>
+                          <span class="widget-results__team-info">Marine College</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+                  <li class="widget-results__item">
+                    <div class="widget-results__header justify-content-center">
+                      <div class="widget-results__title">
+                        Saturday, February 27
+                      </div>
+                    </div>
+                    <div class="widget-results__content">
+                      <div class="widget-results__team widget-results__team--first">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/draconians_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">
+                            Draconians
+                          </h5>
+                          <span class="widget-results__team-info">Wyvern College</span>
+                        </div>
+                      </div>
+                      <div class="widget-results__result">
+                        <div class="widget-results__score">
+                          <span class="widget-results__score-loser">0</span> -
+                          <span class="widget-results__score-loser">0</span>
+                          <div class="widget-results__status">Away</div>
+                        </div>
+                      </div>
+                      <div class="widget-results__team widget-results__team--second">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Clovers</h5>
+                          <span class="widget-results__team-info">St. Patrick’s Inst</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+                  <li class="widget-results__item">
+                    <div class="widget-results__header justify-content-center">
+                      <div class="widget-results__title">
+                        Friday, February 26
+                      </div>
+                    </div>
+                    <div class="widget-results__content">
+                      <div class="widget-results__team widget-results__team--first">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/lucky_clovers_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">Clovers</h5>
+                          <span class="widget-results__team-info">St. Patrick’s Inst</span>
+                        </div>
+                      </div>
+                      <div class="widget-results__result">
+                        <div class="widget-results__score">
+                          <span class="widget-results__score-winner">3</span>
+                          - <span class="widget-results__score-loser">1</span>
+                          <div class="widget-results__status">Home</div>
+                        </div>
+                      </div>
+                      <div class="widget-results__team widget-results__team--second">
+                        <figure class="widget-results__team-logo">
+                          <img src="assets/images/samples/logos/pirates_shield.png" alt="" />
+                        </figure>
+                        <div class="widget-results__team-details">
+                          <h5 class="widget-results__team-name">
+                            L.A. Pirates
+                          </h5>
+                          <span class="widget-results__team-info">Bebop Institute</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
-      <!-- Content / End -->
-      <!-- Login/Register Tabs Modal / End -->
     </div>
-    <!-- Javascript Files
-	================================================== -->
-    <!-- Core JS -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/core.js"></script>
-    <!-- Vendor JS -->
-    <script src="assets/vendor/twitter/jquery.twitter.js"></script>
-    <!-- Template JS -->
-    <script src="assets/js/init.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+
+
+  </div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/core.js"></script>
+
+  <script src="assets/vendor/twitter/jquery.twitter.js"></script>
+
+  <script src="assets/js/init.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
